@@ -10,3 +10,5 @@ end
 
 k=0:N-1;
 plot(k,R)
+hold on
+stem(k,x)
