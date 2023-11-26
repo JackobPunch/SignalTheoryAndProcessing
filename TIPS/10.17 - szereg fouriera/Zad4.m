@@ -16,9 +16,11 @@ for n=1:N
     bn=1/(pi*n)*(cos(w0*n*tau)-1);
     %x=X+Xn*(exp(j*w0*n*t)+exp(-j*w0*n*t));
     x=x+an*cos(w0*n*t)-bn*sin(w0*n*t);
-    %A(n+1)=2*an;
+    A(n+1)=2*an;
     plot(t,x)
     e2(n+1)=e2(n)-an^2*T/2-bn^2*T/2;
 end
 figure()
 plot(0:N,e2)
+figure
+stem(0:N,abs(A))

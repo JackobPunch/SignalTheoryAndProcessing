@@ -26,4 +26,5 @@ for n=1:N
 end
 figure()
 stem(0:N,A)
+figure
 plot(0:N,e2)
