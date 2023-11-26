@@ -20,6 +20,6 @@ for n=1:N
     e2(n+1)=e2(n)-T*abs(Xn)^2*2;
 end
 figure()
-stem(0:N,A)
+stem(0:N,abs(A))
 figure()
 plot(0:N,e2)
