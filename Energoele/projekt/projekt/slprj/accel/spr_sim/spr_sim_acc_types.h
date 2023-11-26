@@ -1,6 +1,0 @@
-#ifndef RTW_HEADER_spr_sim_acc_types_h_
-#define RTW_HEADER_spr_sim_acc_types_h_
-typedef struct P_Subsystempi2delay_spr_sim_T_ P_Subsystempi2delay_spr_sim_T ;
-typedef struct P_Subsystem1_spr_sim_T_ P_Subsystem1_spr_sim_T ; typedef
-struct P_spr_sim_T_ P_spr_sim_T ;
-#endif
