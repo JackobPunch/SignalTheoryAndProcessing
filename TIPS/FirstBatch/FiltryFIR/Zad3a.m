@@ -46,8 +46,9 @@ legend('rect', 'hamming');
 
 
 
-figure;
+figure
 plot(w,angle(real(H)),w,real(H))
+figure
 freqz(hlp,1)
 
 
