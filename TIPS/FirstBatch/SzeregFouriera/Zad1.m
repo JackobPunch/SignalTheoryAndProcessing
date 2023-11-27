@@ -1,5 +1,5 @@
 clc
-clear 
+clear all
 close all
 
 %zadanie 1
