@@ -73,8 +73,6 @@ figure
 plot(w,H_db,w,H_ham_db)
 legend('rect', 'hamming');
 
-
-
 figure
 plot(w,angle(real(H)),w,real(H))
 figure
