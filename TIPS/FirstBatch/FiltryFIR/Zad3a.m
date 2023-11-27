@@ -4,7 +4,7 @@ clear all
 close all
 clc
 
-%zad 2 Filtr dolnoprzepustowy
+%Filtr dolnoprzepustowy
 % N=15;
 % wgr=pi/4;
 % 
