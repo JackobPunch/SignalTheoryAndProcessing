@@ -14,7 +14,7 @@ e2=T/2-T*X0.^2;
 
 for n=1:N
     Xn=((-1).^n-1)/(-j*2*pi*n);
-    A(n+1)=2*j*Xn;
+    A(n+1)=abs(2*Xn);
     e2(n+1)=e2(n)-T*2*abs(Xn)^2;
     x=x+Xn*(exp(j*2*pi*n*t/T)-exp(-j*2*pi*n*t/T));
     plot(t,x)

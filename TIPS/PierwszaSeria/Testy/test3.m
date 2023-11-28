@@ -27,6 +27,11 @@ hBPw=hbp'.*w;
 stem(-N:N,hBPw,'r')
 wynik=sum(hBPw(1:11))
 
+% 
+% n=[-7:7]
+% wg1 = pi/7;
+% H1 = abs(sum(hbp.*exp(-j*wg1*n)))
+
 
 %Zadanie 2
 format long
@@ -34,5 +39,5 @@ h = [1 -1 2 2];
 n = 0:length(h)-1;
 f=300;
 fp=1200;
-wg = 2*pi*f;
-H = abs(sum(h.*exp(j*wg*n/fp)))
+wg2 = 2*pi*f;
+H2 = abs(sum(h.*exp(-j*wg2*n/fp)))

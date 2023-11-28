@@ -5,16 +5,29 @@ f0=150;
 fp=1000;
 f1=100;
 f2=250;
-n=1000;
-T=1/fp*n;
-t=linspace(0,T,n);
-x1=sin(2*pi*f1);
-x2=sin(2*pi*f2);
+Nt=200;
+nt=[0:Nt-1];
+x1=sin(2*pi*f1/fp*nt);
+x2=sin(2*pi*f2/fp*nt);
 x=x1+x2;
 subplot(4,1,1)
-plot(t,x1)
+plot(nt,x1)
 subplot(4,1,2)
-plot(t,x2)
+plot(nt,x2)
 subplot(4,1,3)
-plot(t,x)
+plot(nt,x)
+
+Nx=200;
+f1=100;
+f2=250;
+w1=2*pi*f1/fp;
+w2=2*pi*f2/fp;
+nx=[0:Nx-1];
+x1=sin(w1*nx);
+x2=sin(w2*nx);
+figure
+subplot(4,1,1); plot(nx,x1); 
+subplot(4,1,2); plot(nx,x2);
+x=x1+x2;
+subplot(4,1,3); plot(nx,x);
 
