@@ -1,4 +1,4 @@
-%zad 3a FIR
+%zad 3a
 
 clear all
 close all
@@ -75,10 +75,19 @@ legend('rect', 'hamming');
 
 figure
 plot(w,angle(real(H)),w,real(H))
+
+%Zad3b
 figure
-freqz(hlp,1)
+freqz(hlp,1);
 
+[Hp,W]=freqz(hlp,1);
+figure
+plot(W,abs(Hp))
 
+Hp_u = fliplr(Hp);
+W_u=W.*(-1);
 
-
-
+Hp_c = [Hp_u Hp];
+W_c=[W_u W];
+figure
+plot(W_c, abs(Hp_c));
