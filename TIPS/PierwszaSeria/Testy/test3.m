@@ -27,10 +27,10 @@ hBPw=hbp'.*w;
 stem(-N:N,hBPw,'r')
 wynik=sum(hBPw(1:11))
 
-% 
-% n=[-7:7]
-% wg1 = pi/7;
-% H1 = abs(sum(hbp.*exp(-j*wg1*n)))
+
+n=[-7:7]
+wg1 = pi/7;
+H1 = abs(sum(hbp.*exp(-j*wg1*n)))
 
 
 %Zadanie 2
