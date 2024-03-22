@@ -52,6 +52,8 @@ hold on
 w=hamming(2*N+1);
 hLPw=hlp'.*w;
 stem(-N:N,hLPw,'r')
+legend('rect', 'hamming');
+xlabel('N');
 
 n=-N:N;
 k=1;
@@ -66,15 +68,23 @@ w=linspace(-pi,pi,1000);
 figure
 % H0=abs(w)<wgr; %dolno
 H0=abs(w)>wgr; %górno
-plot(w,H,w,H0,w,H_ham)
+plot(w,H0,w,H,w,H_ham)
+legend('ideal','rect', 'hamming');
+ylabel('wzmocnienie');
+xlabel('w/pi');
 H_db=20*log10(abs(H));
 H_ham_db=20*log10(abs(H_ham));
 figure
 plot(w,H_db,w,H_ham_db)
 legend('rect', 'hamming');
+ylabel('wzmocnienie [dB]');
+xlabel('w/pi');
 
 figure
 plot(w,angle(real(H)),w,real(H))
+legend('amplitude', 'phase');
+xlabel('w/pi');
+
 
 %Zad3b
 figure
