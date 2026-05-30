@@ -1,18 +1,36 @@
-# Signal theory and processing
-## General description
-Codes for assignments in the university course "Signal Theory and Processing" (Teoria i przetwarzanie sygnałów). Published here to get you used to using github and because of easy access and sharing with university friends.
-## Example images
-High-pass FIR filter:
-- impulse response
+# Signal Theory and Processing
 
-![image1](https://github.com/JackobPunch/SignalTheoryAndProcessing/blob/main/FiltryFIR/image1.png)
+MATLAB assignments from the *Signal Theory and Processing* course at AGH University of Science and Technology (Kraków), Electrical Engineering.
 
-- frequency characteristics
+## Contents
 
-![image2](https://github.com/JackobPunch/SignalTheoryAndProcessing/blob/main/FiltryFIR/image2.png)
+| Folder | Topic |
+|--------|-------|
+| `GeneracjaSygnalow` | Signal generation — sine, square, sawtooth, and composite waveforms |
+| `ParametrySygnalow` | Signal parameters — RMS, mean, power, crest factor |
+| `SzeregFouriera` | Fourier series — harmonic decomposition and reconstruction |
+| `FiltryFIR` | FIR filter design — impulse response, frequency, amplitude and phase characteristics |
+| `Testy` | Lab test scripts |
 
-![image3](https://github.com/JackobPunch/SignalTheoryAndProcessing/blob/main/FiltryFIR/image3.png)
+## Example — High-pass FIR filter
 
-- amplitude and phase characteristics
+Impulse response:
 
-![image4](https://github.com/JackobPunch/SignalTheoryAndProcessing/blob/main/FiltryFIR/image4.png)
+![impulse response](https://github.com/JackobPunch/SignalTheoryAndProcessing/blob/main/FiltryFIR/image1.png)
+
+Frequency characteristics:
+
+![frequency 1](https://github.com/JackobPunch/SignalTheoryAndProcessing/blob/main/FiltryFIR/image2.png)
+![frequency 2](https://github.com/JackobPunch/SignalTheoryAndProcessing/blob/main/FiltryFIR/image3.png)
+
+Amplitude and phase characteristics:
+
+![amplitude and phase](https://github.com/JackobPunch/SignalTheoryAndProcessing/blob/main/FiltryFIR/image4.png)
+
+## Tools
+
+MATLAB
+
+## Author
+
+Jakub Cios — Electrical Engineering, AGH University of Science and Technology, Kraków
